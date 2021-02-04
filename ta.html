@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>table</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#newrows").click(function(){
+	      var addcontrols="<tr>"
+		  addcontrols+="<td><input type='text' name='empname' placeholder='enter name ..'></td>"
+		  addcontrols+="<td><input type='text' name='Email' placeholder='enter Email ..'></td>"
+		  addcontrols+="<td><input type='text' name='Salary' placeholder='enter Salary ..'></td>"
+		  addcontrols+="</tr>"
+		  $("table tbody").append(addcontrols);
+	  });
+});
+</script>
+</head>
+
+<body>
+  <center>
+  <h1>hai</h1>
+  <h2>hello</h2>
+  <hr/>
+  <table border="1">
+    <thead style="color:red:">
+    <tr>
+    <th>Emp name</th>
+    <th>Email</th>
+    <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tfoot>
+      <tr>
+      <td><input type="button" value="Add New Row" id="newrows"></td>
+      </tr>
+      </tfoot>
+  </table>
+
+  </center>
+</body>
+</html>
